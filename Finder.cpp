@@ -12,6 +12,7 @@ using namespace std;
         pos = found;
     } else {
     result.push_back(-1);
+    pos = -1;
     }
     }
     return result;
