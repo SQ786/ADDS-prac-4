@@ -6,7 +6,7 @@ using namespace std;
 
     for(size_t i = 1; i <= s2.size(); i++) {
         int check = 0;
-    size_t found = s1.find(s2.substr(check, i));
+    size_t found = s1.find(s2.substr(check-1, i));
     if (found != string::npos) {
         result.push_back(found);
         check = found;
