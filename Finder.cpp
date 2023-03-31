@@ -5,11 +5,11 @@ using namespace std;
     vector<int> result;
 
     for(size_t i = 1; i <= s2.size(); i++) {
-        int check = 0;
-    size_t found = s1.find(s2.substr(check-1, i));
+        int pos = 0;
+    size_t found = s1.find(s2.substr(0, i), pos);
     if (found != string::npos) {
         result.push_back(found);
-        check = found;
+        pos = found;
     } else {
     result.push_back(-1);
     }
